@@ -13,7 +13,7 @@ module Fastlane
             print_all: true,
             print_command: false)
         rescue => ex
-          UI.user_error!("Error unzipping file: #{ex}")
+          UI.user_error!("Error create ixguard file: #{ex}")
         end
       end
 
