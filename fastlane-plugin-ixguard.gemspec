@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'evgeniy.kubyshin@aton.ru'
 
   spec.summary       = 'ixguard plugin'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-ixguard"
+  spec.homepage      = "https://github.com/ekubyshin/fastlane-plugin-ixguard"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
