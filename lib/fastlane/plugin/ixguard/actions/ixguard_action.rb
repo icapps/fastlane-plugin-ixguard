@@ -34,11 +34,21 @@ module Fastlane
 
       def self.available_options
         [
-          # FastlaneCore::ConfigItem.new(key: :your_option,
-          #                         env_name: "IXGUARD_YOUR_OPTION",
-          #                      description: "A description of your option",
-          #                         optional: false,
-          #                             type: String)
+          FastlaneCore::ConfigItem.new(key: :config,
+                                  env_name: "IXGUARD_CONFIG_OPTION",
+                               description: "The iXGuard Config file",
+                                  optional: false,
+                                      type: String),
+          FastlaneCore::ConfigItem.new(key: :output,
+            env_name: "IXGUARD_OUTPUT_OPTION",
+            description: "The output file",
+              optional: false,
+              type: String),
+          FastlaneCore::ConfigItem.new(key: :ipa,
+            env_name: "IXGUARD_IPA_OPTION",
+            description: "The ipa input file",
+            optional: false,
+            type: String)
         ]
       end
 
